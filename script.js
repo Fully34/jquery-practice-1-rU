@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-
+'use strict'
 //===========================================================================//
                         /* ~~~ PART I ~~~ */ 
 //===========================================================================//
@@ -71,11 +71,11 @@ $(document).ready(function() {
         
     $('a').click(function() {
 
-        if ( !confirm("Are you sure you want to go there?!") ) {
+        if ( !confirm('Are you sure you want to go there?!') ) {
 
             $(this).remove();
             return false;
-        };
+        }
     });
 
 
@@ -107,7 +107,7 @@ $(document).ready(function() {
             'transform' : 'translatey(-50%)',
             'margin-right' : '25%',
             'margin-left' : '25%',
-            'height' : '300px',
+            'height' : '300px', 
             'width' : '50%',
             'border' : '1px solid black',
             'background-color' : '#ed828d',
